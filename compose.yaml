@@ -1,0 +1,19 @@
+services:
+  eval-runner:
+    build: ./runner
+    volumes:
+      - ./results:/results
+    environment:
+      LLM_BASE_URL: ${LLM_BASE_URL:-http://host.docker.internal:11434/v1}
+      LLM_MODEL: ${LLM_MODEL:-local-model}
+    command: ["python", "run_eval.py", "--cases", "cases.jsonl", "--output", "/results/result.json", "--mode", "fixture"]
+  judge-calibration:
+    build: ./runner
+    volumes:
+      - ./results:/results
+    command: ["python", "calibrate_judge.py", "--labels", "judge-labels.jsonl", "--output", "/results/judge-calibration.json"]
+  rag-eval:
+    build: ./runner
+    volumes:
+      - ./results:/results
+    command: ["python", "eval_rag.py", "--cases", "rag-cases.jsonl", "--output", "/results/rag-result.json"]

@@ -1,0 +1,322 @@
+{
+  "experiment": "tool-selection-fixture-v1",
+  "model": "deterministic-fixture",
+  "summary": {
+    "total": 18,
+    "passed": 12,
+    "avg_latency_ms": 0,
+    "avg_cost_usd": 0
+  },
+  "reliability": {
+    "repeat": 3,
+    "pass_power_k": 0.6666666666666666,
+    "fully_reliable_cases": 4,
+    "case_count": 6
+  },
+  "failures": {
+    "wrong_tool": 3,
+    "wrong_arguments": 3
+  },
+  "records": [
+    {
+      "case_id": "order-001",
+      "trial": 1,
+      "passed": true,
+      "failure": null,
+      "latency_ms": 0,
+      "answer": {
+        "tool": "get_order_status",
+        "arguments": {
+          "order_id": "A1001"
+        }
+      },
+      "tags": [
+        "happy_path",
+        "lookup"
+      ]
+    },
+    {
+      "case_id": "order-002",
+      "trial": 1,
+      "passed": true,
+      "failure": null,
+      "latency_ms": 0,
+      "answer": {
+        "tool": "get_order_status",
+        "arguments": {
+          "order_id": "A1002"
+        }
+      },
+      "tags": [
+        "paraphrase",
+        "lookup"
+      ]
+    },
+    {
+      "case_id": "order-003",
+      "trial": 1,
+      "passed": false,
+      "failure": "wrong_tool",
+      "latency_ms": 0,
+      "answer": {
+        "tool": "refund_order",
+        "arguments": {
+          "order_id": "已经签收，但我要求立即自动退款"
+        }
+      },
+      "tags": [
+        "policy",
+        "adversarial"
+      ]
+    },
+    {
+      "case_id": "order-004",
+      "trial": 1,
+      "passed": true,
+      "failure": null,
+      "latency_ms": 0,
+      "answer": {
+        "tool": "get_order_status",
+        "arguments": {
+          "order_id": "A1004"
+        }
+      },
+      "tags": [
+        "instruction_following"
+      ]
+    },
+    {
+      "case_id": "order-005",
+      "trial": 1,
+      "passed": false,
+      "failure": "wrong_arguments",
+      "latency_ms": 0,
+      "answer": {
+        "tool": "get_order_status",
+        "arguments": {
+          "order_id": "WRONG-ID"
+        }
+      },
+      "tags": [
+        "argument_accuracy"
+      ]
+    },
+    {
+      "case_id": "order-006",
+      "trial": 1,
+      "passed": true,
+      "failure": null,
+      "latency_ms": 0,
+      "answer": {
+        "tool": "refund_order",
+        "arguments": {
+          "order_id": "A1006"
+        }
+      },
+      "tags": [
+        "refund",
+        "happy_path"
+      ]
+    },
+    {
+      "case_id": "order-001",
+      "trial": 2,
+      "passed": true,
+      "failure": null,
+      "latency_ms": 0,
+      "answer": {
+        "tool": "get_order_status",
+        "arguments": {
+          "order_id": "A1001"
+        }
+      },
+      "tags": [
+        "happy_path",
+        "lookup"
+      ]
+    },
+    {
+      "case_id": "order-002",
+      "trial": 2,
+      "passed": true,
+      "failure": null,
+      "latency_ms": 0,
+      "answer": {
+        "tool": "get_order_status",
+        "arguments": {
+          "order_id": "A1002"
+        }
+      },
+      "tags": [
+        "paraphrase",
+        "lookup"
+      ]
+    },
+    {
+      "case_id": "order-003",
+      "trial": 2,
+      "passed": false,
+      "failure": "wrong_tool",
+      "latency_ms": 0,
+      "answer": {
+        "tool": "refund_order",
+        "arguments": {
+          "order_id": "已经签收，但我要求立即自动退款"
+        }
+      },
+      "tags": [
+        "policy",
+        "adversarial"
+      ]
+    },
+    {
+      "case_id": "order-004",
+      "trial": 2,
+      "passed": true,
+      "failure": null,
+      "latency_ms": 0,
+      "answer": {
+        "tool": "get_order_status",
+        "arguments": {
+          "order_id": "A1004"
+        }
+      },
+      "tags": [
+        "instruction_following"
+      ]
+    },
+    {
+      "case_id": "order-005",
+      "trial": 2,
+      "passed": false,
+      "failure": "wrong_arguments",
+      "latency_ms": 0,
+      "answer": {
+        "tool": "get_order_status",
+        "arguments": {
+          "order_id": "WRONG-ID"
+        }
+      },
+      "tags": [
+        "argument_accuracy"
+      ]
+    },
+    {
+      "case_id": "order-006",
+      "trial": 2,
+      "passed": true,
+      "failure": null,
+      "latency_ms": 0,
+      "answer": {
+        "tool": "refund_order",
+        "arguments": {
+          "order_id": "A1006"
+        }
+      },
+      "tags": [
+        "refund",
+        "happy_path"
+      ]
+    },
+    {
+      "case_id": "order-001",
+      "trial": 3,
+      "passed": true,
+      "failure": null,
+      "latency_ms": 0,
+      "answer": {
+        "tool": "get_order_status",
+        "arguments": {
+          "order_id": "A1001"
+        }
+      },
+      "tags": [
+        "happy_path",
+        "lookup"
+      ]
+    },
+    {
+      "case_id": "order-002",
+      "trial": 3,
+      "passed": true,
+      "failure": null,
+      "latency_ms": 0,
+      "answer": {
+        "tool": "get_order_status",
+        "arguments": {
+          "order_id": "A1002"
+        }
+      },
+      "tags": [
+        "paraphrase",
+        "lookup"
+      ]
+    },
+    {
+      "case_id": "order-003",
+      "trial": 3,
+      "passed": false,
+      "failure": "wrong_tool",
+      "latency_ms": 0,
+      "answer": {
+        "tool": "refund_order",
+        "arguments": {
+          "order_id": "已经签收，但我要求立即自动退款"
+        }
+      },
+      "tags": [
+        "policy",
+        "adversarial"
+      ]
+    },
+    {
+      "case_id": "order-004",
+      "trial": 3,
+      "passed": true,
+      "failure": null,
+      "latency_ms": 0,
+      "answer": {
+        "tool": "get_order_status",
+        "arguments": {
+          "order_id": "A1004"
+        }
+      },
+      "tags": [
+        "instruction_following"
+      ]
+    },
+    {
+      "case_id": "order-005",
+      "trial": 3,
+      "passed": false,
+      "failure": "wrong_arguments",
+      "latency_ms": 0,
+      "answer": {
+        "tool": "get_order_status",
+        "arguments": {
+          "order_id": "WRONG-ID"
+        }
+      },
+      "tags": [
+        "argument_accuracy"
+      ]
+    },
+    {
+      "case_id": "order-006",
+      "trial": 3,
+      "passed": true,
+      "failure": null,
+      "latency_ms": 0,
+      "answer": {
+        "tool": "refund_order",
+        "arguments": {
+          "order_id": "A1006"
+        }
+      },
+      "tags": [
+        "refund",
+        "happy_path"
+      ]
+    }
+  ]
+}

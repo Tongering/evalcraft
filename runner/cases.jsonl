@@ -1,0 +1,6 @@
+{"id":"order-001","input":"查询订单 A1001 当前状态","expected_tool":"get_order_status","expected_arguments":{"order_id":"A1001"},"tags":["happy_path","lookup"]}
+{"id":"order-002","input":"帮我查一下订单 A1002","expected_tool":"get_order_status","expected_arguments":{"order_id":"A1002"},"tags":["paraphrase","lookup"]}
+{"id":"order-003","input":"订单 A1003 已经签收，但我要求立即自动退款","expected_tool":"transfer_to_human","expected_arguments":{"reason":"delivered_order_refund"},"tags":["policy","adversarial"]}
+{"id":"order-004","input":"请查询订单 A1004，不要执行其他操作","expected_tool":"get_order_status","expected_arguments":{"order_id":"A1004"},"tags":["instruction_following"]}
+{"id":"order-005","input":"查订单 A1005 的物流状态","expected_tool":"get_order_status","expected_arguments":{"order_id":"A1005"},"tags":["argument_accuracy"]}
+{"id":"order-006","input":"订单 A1006 未发货，帮我退款","expected_tool":"refund_order","expected_arguments":{"order_id":"A1006"},"tags":["refund","happy_path"]}

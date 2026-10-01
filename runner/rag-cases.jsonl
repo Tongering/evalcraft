@@ -1,0 +1,4 @@
+{"id":"rag-01","relevant_doc_ids":["d1","d2"],"retrieved_doc_ids":["d1","d2","d7"],"supported_claims":4,"total_claims":4}
+{"id":"rag-02","relevant_doc_ids":["d3","d4"],"retrieved_doc_ids":["d3","d8","d9"],"supported_claims":3,"total_claims":3}
+{"id":"rag-03","relevant_doc_ids":["d5"],"retrieved_doc_ids":["d5","d10"],"supported_claims":2,"total_claims":4}
+{"id":"rag-04","relevant_doc_ids":["d6"],"retrieved_doc_ids":["d6"],"supported_claims":3,"total_claims":3}

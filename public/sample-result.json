@@ -1,0 +1,16 @@
+{
+  "experiment": "tool-use-baseline-v1",
+  "model": "local-model-7b-q4",
+  "summary": {
+    "total": 80,
+    "passed": 61,
+    "avg_latency_ms": 1840,
+    "avg_cost_usd": 0
+  },
+  "failures": {
+    "wrong_tool": 7,
+    "wrong_arguments": 5,
+    "policy_violation": 3,
+    "environment": 4
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "samples": 10,
+  "matrix": {
+    "tp": 4,
+    "tn": 4,
+    "fp": 1,
+    "fn": 1
+  },
+  "accuracy": 0.8,
+  "cohen_kappa": 0.6000000000000001,
+  "position_bias": {
+    "flips": 2,
+    "flip_rate": 0.2
+  }
+}

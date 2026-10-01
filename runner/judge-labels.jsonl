@@ -1,0 +1,10 @@
+{"id":"j01","human_pass":true,"judge_pass_ab":true,"judge_pass_ba":true}
+{"id":"j02","human_pass":true,"judge_pass_ab":true,"judge_pass_ba":true}
+{"id":"j03","human_pass":false,"judge_pass_ab":false,"judge_pass_ba":false}
+{"id":"j04","human_pass":false,"judge_pass_ab":true,"judge_pass_ba":false}
+{"id":"j05","human_pass":true,"judge_pass_ab":false,"judge_pass_ba":false}
+{"id":"j06","human_pass":false,"judge_pass_ab":false,"judge_pass_ba":false}
+{"id":"j07","human_pass":true,"judge_pass_ab":true,"judge_pass_ba":true}
+{"id":"j08","human_pass":false,"judge_pass_ab":false,"judge_pass_ba":false}
+{"id":"j09","human_pass":true,"judge_pass_ab":true,"judge_pass_ba":false}
+{"id":"j10","human_pass":false,"judge_pass_ab":false,"judge_pass_ba":false}
